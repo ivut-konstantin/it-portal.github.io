@@ -6,7 +6,8 @@
 :root {
     --color1: rgb(48, 48, 48);
     --light-hover: rgba(255, 255, 255, 0.849);
-    --simple-fill: rgba(255, 255, 255, 0.55);
+    --simple-fill1: rgba(255, 255, 255, 0.55);
+    --simple-fill2: rgb(189, 189, 189);
 }
 
 /*  */
@@ -40,6 +41,12 @@ footer {
     font-size: 30px;
 }
 
+@media (min-width:992px) {
+    .navbar-expand-lg {
+        height: 71px;
+    }
+}
+
 .nav-link:hover {
     color: var(--light-hover);
     transition: var(--transition-25);
@@ -51,31 +58,35 @@ footer {
 }
 
 .bi-toggler {
-    fill: var(--simple-fill);
+    fill: var(--simple-fill1);
 }
 
+
 /* ПОИСК */
+.input-group {
+    padding-top: 10px;
+    border-bottom: 2px solid var(--simple-fill1);
+}
+
 .form-control {
-    color: var(--simple-fill);
+    color: var(--light-hover) !important;
     background-color: transparent;
     border: none;
     border-radius: 0%;
-    border-bottom: 2px solid;
-    padding: 0 0 0 2px;
+    padding: 6px 0 0 2px;
     caret-color: var(--light-hover);
 }
 
 .form-control:focus {
     background-color: transparent;
     box-shadow: none;
-    border-color:var(--simple-fill);
+    border-color: var(--simple-fill1);
 }
 
 .form-control::placeholder {
-    color: var(--simple-fill);
+    color: var(--simple-fill1);
+
 }
-
-
 
 .btn-search {
     background-color: transparent;
@@ -86,11 +97,10 @@ footer {
 }
 
 .material-symbols-outlined {
+    padding-top: 4px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    color: var(--simple-fill);
+    font-size: 24px;
+    color: var(--simple-fill1);
     transition: var(--transition-25);
 }
 
@@ -101,7 +111,6 @@ footer {
 
 
 /* МОДАЛЬНОЕ ОКНО */
-
 .modal {
     display: none;
     position: fixed;
@@ -112,7 +121,7 @@ footer {
     overflow: auto;
     background-color: var(--color1);
     color: #fff;
-    opacity: 90%;
+    opacity: 95%;
     z-index: 1000;
 }
 
@@ -125,7 +134,7 @@ footer {
 
 .bi-list,
 .bi-close {
-    fill: var(--simple-fill);
+    fill: var(--simple-fill1);
     transition: var(--transition-25);
 }
 
@@ -144,12 +153,11 @@ footer {
 
 
 .modal .modal_content {
-    padding: 4px 10px;
     z-index: 99999;
 }
 
 .modal .modal_content .close_modal_window {
-    color: #aaa;
+    color: var(--simple-fill2);
     float: right;
     font-size: 44px;
     font-weight: bold;
@@ -159,13 +167,26 @@ footer {
 .modal_inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
+    margin-top: 5px;
     margin-bottom: 15px;
+    border-bottom: 2px solid var(--simple-fill2);
 }
 
-.modal_title {
-    font-size: 25px;
-    font-weight: bold;
+.modal-ul {
+    color: var(--simple-fill2);
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.modal-ul li {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .modal-ul {
+        text-align: center;
+    }
 }
 
 /* АНИМАЦИИ МОДАЛЬНОГО ОКНА */
@@ -207,4 +228,25 @@ footer {
     100% {
         left: -300px;
     }
+}
+
+/* ОСНОВНАЯ ЧАСТЬ СТРАНИЦЫ */
+.card-link {
+    text-decoration: none;
+    color: var(--simple-fill2);
+}
+
+.card-link:hover {
+    color: var(--light-hover);
+}
+
+.card {
+    background-color: var(--color1);
+    transition: var(--transition-25);
+}
+
+.card:hover {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition: var(--transition-25);
 }

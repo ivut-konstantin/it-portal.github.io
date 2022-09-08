@@ -22,6 +22,7 @@
             <!-- ПАНЕЛЬ НАВИГАЦИИ -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
+                    <!-- КНОПКА МОДАЛЬНОГО ОКНА -->
                     <button class="btn-modal me-2" data-modal-btn="my_modal1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi-list"
                             viewBox="0 0 16 16">
@@ -30,8 +31,10 @@
                         </svg>
                     </button>
 
+                    <!-- ЛОГОТИП -->
                     <a class="navbar-brand" href="#">Logo</a>
 
+                    <!-- КНОПКА-ГАМБУРГЕР -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +44,6 @@
                                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                         </svg>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -58,13 +60,17 @@
                             </li>
                         </ul>
 
+                        <!-- ПОИСК -->
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn-search" type="submit">
-                                <span class="material-symbols-outlined">
-                                    search
-                                </span>
-                            </button>
+                            <div class="input-group mb-3">
+                                <input class="form-control search-input me-2 " type="search"
+                                    placeholder="Поиск по сайту" aria-label="Search">
+                                <button class="btn-search" type="submit">
+                                    <span class="material-symbols-outlined">
+                                        search
+                                    </span>
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -80,95 +86,212 @@
                 <!-- СТОЛБЕЦ СЛЕВА -->
                 <div class="col-lg-4 col-md-6 col-sm-12">
 
-                    <div class="card my-4">
-                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/business-people_AKSM11WW9N.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/business-people_AKSM11WW9N.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/woman-working_ZIEZYD149O.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/circuit-macro_MADL8CN3KW.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/architecture-building_YC9NVCLK9O.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/classic-camera_DLOPQTT3DN.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/street-light_33N0RBNZ0W.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
 
-                    <div class="card my-4">
-                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/top-workspace_ILQA1VXXOJ.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                    </div>
-
-                    <div class="card my-4">
-                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/architecture-building_YC9NVCLK9O.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                    </div>
 
                 </div>
-                <!-- СТОЛБЕЦ В СЕРЕДИНЕ -->
+                <!-- СТОЛБЕЦ ПОСЕРЕДИНЕ -->
                 <div class="col-lg-4 col-md-6 col-sm-12">
-
-                    <div class="card my-4">
-                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/circuit-macro_MADL8CN3KW.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/headphones-desk_IJNKVI0ELP.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card my-4">
-                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/classic-camera_DLOPQTT3DN.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/keyboard-keys_9EJ2TLEMN1.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card my-4">
-                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/family-playing_NTY4GIGUHR.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/family-breakfast_K6RXH37X6S.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
                         </div>
-                    </div>
-
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/photography-gear_Z5IW9QEFL6.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/iphone-device_WR9GMT3HBF.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/browsing-smartphone_IFIDNAUSRR.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <!-- СТОЛБЕЦ СПРАВА -->
                 <div class="col-lg-4 col-md-6 col-sm-12">
-
-                    <div class="card my-4">
-                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/keyboard-keys_9EJ2TLEMN1.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/power-lines_E1AJCA2FF9.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card my-4">
-                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/iphone-device_WR9GMT3HBF.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/business-people_NS0TW3LSDM.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card my-4">
-                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/woman-working_ZIEZYD149O.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/business-woman_7U4SPRJEIE.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
                         </div>
-                    </div>
-
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/classic-camera_ZQN8PJHCP0.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/solar-panels_WVYUXNQBP8.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-link" href="#">
+                        <div class="card my-4">
+                            <img src="https://cdn.stocksnap.io/img-thumbs/960w/photographer-picture_IUFCO7F805.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -192,7 +315,6 @@
     <div data-modal-window="my_modal1" class="modal">
         <div class="modal_content">
             <div class="modal_inner">
-                <div class="modal_title">Модальное окно 1</div>
                 <div class="close_modal_window">
                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" class="bi-close" viewBox="0 0 16 16">
                         <path
@@ -200,8 +322,27 @@
                     </svg>
                 </div>
             </div>
-            <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero nulla eligendi quo? Nobis ipsam
-                repellendus a quae! Totam error nisi, cum quaerat a minus ut? Temporibus voluptates a possimus.</p>
+            <ul class="modal-ul">
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <br>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <br>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+            </ul>
         </div>
     </div>
 
