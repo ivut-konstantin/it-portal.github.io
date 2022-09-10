@@ -39,6 +39,7 @@ footer {
 /* ПАНЕЛЬ НАВИГАЦИИ */
 .navbar-brand {
     font-size: 30px;
+    margin-left: 20px;
 }
 
 @media (min-width:992px) {
@@ -96,7 +97,7 @@ footer {
     cursor: default;
 }
 
-.material-symbols-outlined {
+#icon-search {
     padding-top: 4px;
     display: flex;
     font-size: 24px;
@@ -104,7 +105,7 @@ footer {
     transition: var(--transition-25);
 }
 
-.material-symbols-outlined:hover {
+#icon-search:hover {
     color: var(--light-hover);
     transition: var(--transition-25);
 }
@@ -145,12 +146,10 @@ footer {
 }
 
 .btn-modal {
-    padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     background-color: transparent;
     border: none;
 }
-
 
 .modal .modal_content {
     z-index: 99999;
@@ -233,15 +232,14 @@ footer {
 /* ОСНОВНАЯ ЧАСТЬ СТРАНИЦЫ */
 .card-link {
     text-decoration: none;
-    color: var(--simple-fill2);
+    color: var(--color1);
 }
 
 .card-link:hover {
-    color: var(--light-hover);
+    color: var(--color1);
 }
 
 .card {
-    background-color: var(--color1);
     transition: var(--transition-25);
 }
 
@@ -249,4 +247,44 @@ footer {
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.5);
     transform: translateY(-5px);
     transition: var(--transition-25);
+}
+
+.card-text {
+    border-bottom: 1px solid var(--simple-fill2);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+}
+
+.icon-calendar {
+    fill: rgb(148, 148, 148);
+    margin-bottom: 6px;
+    margin-right: 4px;
+}
+
+.icon-views {
+    fill: rgb(148, 148, 148);
+    margin-bottom: 4px;
+    margin-right: 2px;
+}
+
+.calendar-date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(163, 163, 163);
+    padding-top: 2px;
+}
+
+.card-body .col-2 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.card-body .col-5 {
+    padding-right: 0;
+}
+
+.num-views {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(163, 163, 163);
 }
