@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ИКОНКИ -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ШАПКА -->
+    <header>
+        <div class="container">
+            <!-- ПАНЕЛЬ НАВИГАЦИИ -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <!-- КНОПКА МОДАЛЬНОГО ОКНА -->
+                    <button class="btn-modal me-2" data-modal-btn="my_modal1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+
+                    <!-- ЛОГОТИП -->
+                    <a class="navbar-brand" href="index.html">Logo</a>
+
+                    <!-- КНОПКА-ГАМБУРГЕР -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi-toggler"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="index.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Магазин</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Журнал</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+
+                        <!-- ПОИСК -->
+                        <form class="d-flex" role="search">
+                            <div class="input-group mb-3">
+                                <input class="form-control search-input me-2 " type="search"
+                                    placeholder="Поиск по сайту" aria-label="Search">
+                                <button class="btn-search" type="submit">
+                                    <span id="icon-search" class="material-symbols-outlined">
+                                        search
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- ОСНОВНАЯ ЧАСТЬ СТРАНИЦЫ -->
+    <section id="post-1">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <div class="row mb-1">
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="icon-calendar" viewBox="0 0 16 16">
+                                <path
+                                    d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                            </svg>
+                            <span class="calendar-date">01.01.2022</span>
+                        </div>
+                        <div class="col text-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="icon-views" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                            </svg>
+                            <span class="num-views">45600</span>
+                        </div>
+                    </div>
+                    <img src="https://cdn.stocksnap.io/img-thumbs/960w/business-people_AKSM11WW9N.jpg"
+                        class="img-post-1" alt="...">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi, quo ab sint et eos nemo
+                        error maiores ipsam, obcaecati aperiam sequi veritatis dicta ex molestias reprehenderit debitis,
+                        deserunt odio enim eius perspiciatis consectetur accusantium quidem nulla! Voluptates
+                        perspiciatis deleniti incidunt nihil voluptatum tenetur fugit. Cupiditate, corporis explicabo
+                        dolores facilis saepe ab libero eos provident exercitationem porro nihil recusandae fugit autem
+                        quisquam expedita aliquam culpa? Ut amet possimus nostrum illum ex, est repellat fuga
+                        voluptatibus dolorem iste molestiae soluta praesentium aliquam in officia labore eveniet aut hic
+                        ducimus distinctio fugit veniam. Aut dolorum nihil ipsum cum. Autem pariatur aut ut similique
+                        quia. Repudiandae, rerum odit dolorem, at aliquid quis voluptatem tempora quos iure id aperiam
+                        ducimus consequatur! Libero fugiat fuga molestiae optio officiis non blanditiis. Culpa,
+                        praesentium et. Nesciunt nulla necessitatibus non eveniet dolores quisquam vitae beatae
+                        assumenda atque maxime a placeat delectus, modi adipisci odio earum. Quibusdam ullam enim nihil,
+                        rerum tempora ducimus molestias suscipit natus, inventore, unde est nam modi numquam doloremque
+                        ea dolorem quod autem magni quo? In, quaerat illum. Dolore quam, itaque cumque quod aspernatur
+                        sed maiores explicabo ullam ab id ratione iure fugiat necessitatibus. A quis sed repudiandae,
+                        ratione ipsam culpa dolorum nostrum cupiditate quisquam quas aspernatur provident deserunt
+                        doloremque id odit consequuntur labore incidunt voluptates sunt illum odio alias? Corporis
+                        perferendis iure laborum dolore eaque esse fugiat aperiam eum, veniam, iste qui, dolorum ut
+                        nostrum perspiciatis? Veritatis at impedit vel maxime. Minus distinctio asperiores error
+                        nesciunt quidem placeat aperiam maiores aliquid nobis optio? Libero, laboriosam neque
+                        dignissimos perspiciatis esse perferendis, voluptatum expedita ad aliquid nesciunt veritatis?
+                        Quos debitis hic voluptatem pariatur labore? Eligendi et earum fuga necessitatibus vitae
+                        commodi, suscipit nihil dolore laboriosam natus vel? Nulla et alias optio aut, quae enim?
+                        Adipisci, officia. Animi maiores blanditiis accusantium, harum optio doloribus inventore
+                        eligendi nihil, similique expedita sint error veritatis, corporis enim? Sed modi dolorum dicta
+                        sequi? Sapiente, facere pariatur rem mollitia, quasi autem possimus veritatis quidem nam
+                        doloribus rerum ad. Facere unde aspernatur numquam sint soluta quod veniam ab deserunt quidem,
+                        magni sapiente repellat voluptatibus sed voluptate nisi ratione, enim vitae cum id doloribus
+                        beatae modi eveniet molestiae. Aliquam unde possimus officia, voluptatem voluptas recusandae
+                        sint corrupti amet, debitis facilis cupiditate mollitia eveniet minima? Totam accusamus
+                        architecto cumque perspiciatis ipsa minus voluptatibus quod commodi at? Alias, accusantium
+                        cupiditate. Laudantium repudiandae maiores asperiores odio debitis ipsa vitae ut unde error
+                        fugit exercitationem sunt placeat, modi quam sequi eaque similique ratione nostrum minus
+                        laboriosam ullam accusamus rem eligendi animi. Iure, debitis! Ab consectetur ut nulla ad dolorum
+                        quia quos dolores est non animi sequi pariatur maiores fuga, in ipsam, aliquid beatae illum
+                        consequatur facilis blanditiis et error itaque eius iste. Consectetur, molestias? Eaque rerum
+                        ratione molestiae est suscipit eos provident molestias animi quae, fugit, consequatur vero
+                        facilis labore distinctio accusamus, sunt ipsa in natus. Itaque, dolore quibusdam impedit
+                        placeat qui voluptates hic tenetur consequatur, molestias ab sint rerum quae iure ipsam
+                        veritatis id ex dolorem delectus enim ratione quasi expedita? Consequatur possimus sapiente
+                        eveniet obcaecati animi.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <a class="card-link" href="#">
+                                <div class="card card-1 my-4">
+                                    <img src="https://cdn.stocksnap.io/img-thumbs/960w/woman-working_ZIEZYD149O.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the
+                                            bulk
+                                            of the card's content.</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="icon-calendar" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                    <path
+                                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                </svg>
+                                                <span class="calendar-date">01.01.2022</span>
+                                            </div>
+                                            <div class="col text-end">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="icon-views" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <span class="num-views">45600</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <a class="card-link" href="#">
+                                <div class="card card-1 my-4">
+                                    <img src="https://cdn.stocksnap.io/img-thumbs/960w/circuit-macro_MADL8CN3KW.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the
+                                            bulk
+                                            of the card's content.</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="icon-calendar" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                    <path
+                                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                </svg>
+                                                <span class="calendar-date">01.01.2022</span>
+                                            </div>
+                                            <div class="col text-end">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="icon-views" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <span class="num-views">456002</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <a class="card-link" href="#">
+                                <div class="card card-1 my-4">
+                                    <img src="https://cdn.stocksnap.io/img-thumbs/960w/architecture-building_YC9NVCLK9O.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the
+                                            bulk
+                                            of the card's content.</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="icon-calendar" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                    <path
+                                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                </svg>
+                                                <span class="calendar-date">01.01.2022</span>
+                                            </div>
+                                            <div class="col text-end">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="icon-views" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <span class="num-views">45600</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <a class="card-link" href="#">
+                                <div class="card card-1 my-4">
+                                    <img src="https://cdn.stocksnap.io/img-thumbs/960w/classic-camera_DLOPQTT3DN.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the
+                                            bulk
+                                            of the card's content.</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="icon-calendar" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                    <path
+                                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                </svg>
+                                                <span class="calendar-date">01.01.2022</span>
+                                            </div>
+                                            <div class="col text-end">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="icon-views" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                    <path
+                                                        d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                </svg>
+                                                <span class="num-views">45600</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-12">
+                    © 2022 Неивестное название сайта
+                    <br>
+                    Политика конфиденциальности
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div data-modal-window="my_modal1" class="modal">
+        <div class="modal_content">
+            <div class="modal_inner">
+                <div class="close_modal_window">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" class="bi-close" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+            </div>
+            <ul class="modal-ul">
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <br>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <br>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+                <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

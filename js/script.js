@@ -38,6 +38,8 @@ for (let i = 0; i < btns.length; i++) {
     screen.addListener(closeModal);
 }
 
+
+
 // window.onclick = function (event) {
 //     if (event.target.hasAttribute('data-modal-window')) {
 //         let modals = document.querySelectorAll('*[data-modal-window]');

@@ -288,3 +288,38 @@ footer {
     font-size: 16px;
     color: rgb(163, 163, 163);
 }
+
+/* POST-1 */
+#post-1 .container {
+    color: var(--color1);
+    background-color: #fff;
+}
+
+#post-1 h1 {
+    border-bottom: 2px solid var(--color1);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#post-1 h2 {
+    border-bottom: 2px solid var(--color1);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.img-post-1 {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color1);
+}
+
+#post-1 p {
+    margin-top: 10px;
+    border-bottom: 2px solid var(--color1);
+    padding-bottom: 10px;
+}
+
+@media(max-width: 1182px) {
+    
+}
+
