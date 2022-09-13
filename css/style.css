@@ -178,8 +178,22 @@ footer {
     padding-left: 30px;
 }
 
+.modal-ul h4 {
+    color: var(--simple-fill2);
+    cursor: default;
+}
+
+.modal-ul h4:hover {
+    color: var(--simple-fill2);
+}
+
 .modal-ul li {
-    margin: 10px 0;
+    padding: 10px 30px 0 0;
+    font-size: 18px;
+}
+
+.modal-ul h4 {
+    border-bottom: 1px solid var(--simple-fill2);
 }
 
 @media (max-width: 768px) {
@@ -319,7 +333,27 @@ footer {
     padding-bottom: 10px;
 }
 
-@media(max-width: 1182px) {
-    
+/* TECHNOLOGY */
+#technology .container {
+    background-color: #fff;
+    height: 787px;
 }
 
+#technology h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--color1);
+    cursor: default;
+}
+
+#technology h4 {
+    border-bottom: 2px solid var(--color1);
+    cursor: default;
+}
+
+#technology .nav-link {
+    color: rgba(0, 0, 0, 0.65);
+}
+#technology .nav-link:hover {
+    color: #000;
+}
