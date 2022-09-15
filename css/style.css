@@ -8,9 +8,11 @@
     --light-hover: rgba(255, 255, 255, 0.849);
     --simple-fill1: rgba(255, 255, 255, 0.55);
     --simple-fill2: rgb(189, 189, 189);
+    --line-border-fill:#3498db;
+    --line-border-empty:#e0e0e0;
 }
 
-/*  */
+/* АНИМАЦИЯ */
 :root {
     --transition-25: all 0.25s ease-in-out;
 }
@@ -333,8 +335,32 @@ footer {
     padding-bottom: 10px;
 }
 
-/* TECHNOLOGY */
+/* 
+TECHNOLOGY
+GAMES 
+
+*/
 #technology .container {
+    background-color: #fff;
+    height: 787px;
+}
+
+#games .container {
+    background-color: #fff;
+    height: 787px;
+}
+
+#reviews .container {
+    background-color: #fff;
+    height: 787px;
+}
+
+#languages .container {
+    background-color: #fff;
+    height: 787px;
+}
+
+#technique .container {
     background-color: #fff;
     height: 787px;
 }
@@ -346,7 +372,55 @@ footer {
     cursor: default;
 }
 
+#games h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--color1);
+    cursor: default;
+}
+
+#reviews h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--color1);
+    cursor: default;
+}
+
+#languages h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--color1);
+    cursor: default;
+}
+
+#technique h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--color1);
+    cursor: default;
+}
+
 #technology h4 {
+    border-bottom: 2px solid var(--color1);
+    cursor: default;
+}
+
+#games h4 {
+    border-bottom: 2px solid var(--color1);
+    cursor: default;
+}
+
+#reviews h4 {
+    border-bottom: 2px solid var(--color1);
+    cursor: default;
+}
+
+#languages h4 {
+    border-bottom: 2px solid var(--color1);
+    cursor: default;
+}
+
+#technique h4 {
     border-bottom: 2px solid var(--color1);
     cursor: default;
 }
@@ -354,6 +428,109 @@ footer {
 #technology .nav-link {
     color: rgba(0, 0, 0, 0.65);
 }
+
+#games .nav-link {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+#reviews .nav-link {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+#languages .nav-link {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+#technique .nav-link {
+    color: rgba(0, 0, 0, 0.65);
+}
+
 #technology .nav-link:hover {
     color: #000;
+}
+
+#games .nav-link:hover {
+    color: #000;
+}
+
+#reviews .nav-link:hover {
+    color: #000;
+}
+
+#languages .nav-link:hover {
+    color: #000;
+}
+
+#technique .nav-link:hover {
+    color: #000;
+}
+
+/* ПАГИНАЦИЯ */
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+.progress-container::before{
+    content: '';
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+.progress{
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+.circle{
+    background-color: #fff;
+    color:#999;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:3px solid var(--line-border-empty);
+    transition: 0.4s ease;
+}
+.circle .active{
+    border-color: var(--line-border-fill);
+}
+
+.btn-pag{
+    background-color: var(--line-border-fill);
+    color:#fff;
+    border:0;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.btn-pag:active{
+    transform: scale(0.98);
+}
+.btn-pag:focus{
+    outline: 0;
+}
+.btn-pag:disabled{
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
 }

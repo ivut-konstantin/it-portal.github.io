@@ -17,14 +17,14 @@
     <title>IT-Канал</title>
 </head>
 
-<body>
+<body id="body">
     <!-- ШАПКА -->
     <header>
         <div class="container">
             <!-- ПАНЕЛЬ НАВИГАЦИИ -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    
+
                     <!-- КНОПКА МОДАЛЬНОГО ОКНА -->
                     <button class="btn-modal me-2" data-modal-btn="my_modal1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi-list"
@@ -716,7 +716,18 @@
             </div>
         </div>
     </section>
-
+    <div class="pagination">
+        <div class="progress-container">
+            <div class="progress" id="progress">
+                <div class="circle active">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+                <div class="circle">4</div>
+            </div>
+            <button class="btn-pag" id="prev" disabled>Prev</button>
+            <button class="btn-pag" id="next">Next</button>
+        </div>
+    </div>
     <!-- ПОДВАЛ -->
     <footer>
         <div class="container py-4">
@@ -743,35 +754,45 @@
                 </div>
             </div>
             <ul class="modal-ul">
-                <li><h4 class="mb-2">Технологии</h4></li>
+                <li>
+                    <h4 class="mb-2">Технологии</h4>
+                </li>
 
                 <li><a class="nav-link" href="#">Lorem</a></li>
                 <li><a class="nav-link" href="#">Ipsum</a></li>
                 <li><a class="nav-link" href="#">Dolor</a></li>
                 <li><a class="nav-link" href="#">Sit</a></li>
 
-                <li><h4 class="my-2">Языки</h4></li>
+                <li>
+                    <h4 class="my-2">Языки</h4>
+                </li>
 
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
 
-                <li><h4 class="my-2">Обзоры</h4></li>
+                <li>
+                    <h4 class="my-2">Обзоры</h4>
+                </li>
 
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
 
-                <li><h4 class="my-2">Техника</h4></li>
+                <li>
+                    <h4 class="my-2">Техника</h4>
+                </li>
 
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
 
-                <li><h4 class="my-2">Игры</h4></li>
+                <li>
+                    <h4 class="my-2">Игры</h4>
+                </li>
 
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
                 <li><a class="nav-link" href="#">Lorem, ipsum dolor</a></li>
