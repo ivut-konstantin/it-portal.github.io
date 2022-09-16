@@ -63,7 +63,7 @@ prev.addEventListener('click', () => {
         currentActive = 1;
     }
     update();
-})
+});
 
 function update() {
     circles.forEach((circle, idx) => {
@@ -72,7 +72,7 @@ function update() {
         } else {
             circle.classList.remove('acive');
         }
-    });
+    })
 
     const actives = document.querySelectorAll('.active');
     progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%';
